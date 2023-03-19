@@ -6,17 +6,17 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
     CarRentalCompany carRentalCompany = new CarRentalCompany();
-    carRentalCompany.addCar(new Car("Benz","2019","1234",
+    carRentalCompany.addCar(new Car(0,"Benz","2019","1234",
             "luxury",8999.99));
-    carRentalCompany.addCar(new Car("Audi","2020","1235",
+    carRentalCompany.addCar(new Car(1,"Audi","2020","1235",
             "luxury",9999.99));
-    carRentalCompany.addCar(new Car("Honda","2021","1236",
+    carRentalCompany.addCar(new Car(2,"Honda","2021","1236",
             "Sedan",5999.99));
-    carRentalCompany.addCar(new Car("Tesla","2022","1237",
+    carRentalCompany.addCar(new Car(3,"Tesla","2022","1237",
             "luxury",10999.99));
-    carRentalCompany.addCar(new Car("Swift","2018","1238",
+    carRentalCompany.addCar(new Car(4,"Swift","2018","1238",
             "hatchback",2999.99));
-    carRentalCompany.addCar(new Car("Nano","2020","1239",
+    carRentalCompany.addCar(new Car(5,"Nano","2020","1239",
             "mini",999.99));
 
     System.out.println("Added Cars");
@@ -25,7 +25,7 @@ public class Main {
             LocalDate.of(2023,6,2));
     Renter newRenter=new Renter("Bhanu", "Eravatri","X12A34",LocalDate.of(1993,01,02));
     newRenter.setDatePeriod(newrenterDatePeriod);
-    Car newRenterBookedCar=new Car("Benz","2019","1234",
+    Car newRenterBookedCar=new Car(0,"Benz","2019","1234",
             "luxury",8999.99);
 
 

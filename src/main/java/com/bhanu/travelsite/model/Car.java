@@ -9,6 +9,7 @@ package com.bhanu.travelsite.model;
  * @author charanbhanu4
  */
 public class Car {
+    private final int carId;
     private final String make;
     private final String model;
     private final String rentalGroup;
@@ -29,7 +30,8 @@ public class Car {
     public double getCostPerDay() {
         return costPerDay;
     }
-    public Car(String make, String model, String registrationNumber, String rentalGroup, double costPerDay) {
+    public Car(int carId,String make, String model, String registrationNumber, String rentalGroup, double costPerDay) {
+        this.carId=carId;
         this.make = make;
         this.model = model;
         this.registrationNumber = registrationNumber;
@@ -42,8 +44,9 @@ public class Car {
                 "make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", rentalGroup='" + rentalGroup + '\'' +
-                ", registrationNumber='" + registrationNumber + '\'' +
-                ", costPerDay=" + costPerDay +
                 '}';
+    }
+    public int getCarId() {
+    return this.carId;
     }
 }

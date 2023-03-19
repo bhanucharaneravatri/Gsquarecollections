@@ -16,14 +16,13 @@ public class Renter {
     private final String FirstName;
     private final String drivingLicense;
     private DatePeriod datePeriod;
-
     private Car bookedCar;
 
     public void setDatePeriod(DatePeriod datePeriod) {
         this.datePeriod = datePeriod;
     }
-    public Renter(String firstName, String LastName, String drivingLicense, LocalDate DateofBirth,DatePeriod dp, Car car) {
-        this.FirstName = firstName;
+    public Renter(String FirstName, String LastName, String drivingLicense, LocalDate DateofBirth,DatePeriod dp, Car car) {
+        this.FirstName = FirstName;
         this.LastName= LastName;
         this.drivingLicense = drivingLicense;
         this.DateofBirth=DateofBirth;

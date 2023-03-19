@@ -33,8 +33,8 @@
             response.sendRedirect("login.jsp");
             }
             %>
-    <h1>Welcome</h1>
-    ${username}
+    <h1>Welcome ${firstName} ${lastName}</h1>
+    
     <form action="GetAllCars" method="get">
     <input type="submit" value="GetAllCars">
     </form>
@@ -42,29 +42,39 @@
     <form action="GetMatchingCars" method="get">
         
         <div><!-- comment -->
+            Enter your budget<br>
             <input type="number" name="maxCostPerDay"placeholder="maxcostPerDay" min="0" max="50">
             <input type="number" name="minCostPerDay"placeholder="mincostPerDay" min="0" max="50">
         </div>
         <div>
+            Booking period<br>
             start <input type = "date" name="startDate">  
             end <input type = "date" name="endDate" >  
         </div>
         
         <div>
-        VW<input type=checkbox  name="make"value="VW">
-        benz<input type=checkbox  name="make"value="benz">
-        maruti<input type=checkbox  name="make"value="maruti">
-        tata<input type=checkbox  name="make" value="tata">
-        bmw<input type=checkbox  name="make" value="bmw">
-        audi<input type=checkbox  name="make" value="audi">
+            Get Matching Cars of Popular Brands<br>    
+        Volkswagen<input type=checkbox  name="make"value="Volkswagen">
+        Nissan<input type=checkbox  name="make"value="Nissan">
+        Mitsubishi<input type=checkbox  name="make"value="Mitsubishi">
+        Mercedes-Benz<input type=checkbox  name="make" value="Mercedes-Benz">
+        Kia<input type=checkbox  name="make" value="Kia">
+        Toyota<input type=checkbox  name="make" value="Toyota">
+        Volvo<input type=checkbox  name="make" value="Volvo">
+        Chevrolet<input type=checkbox  name="make" value="Chevrolet">
+        Jeep<input type=checkbox  name="make" value="Jeep">
+        GMC<input type=checkbox  name="make" value="GMC">
+        Porsche<input type=checkbox  name="make" value="Porsche">
+        Honda<input type=checkbox  name="make" value="Honda">
         </div>
         
         
         
         <div>
-        luxury<input type=checkbox value="luxury" name="RentalGroup">
-        sedan<input type=checkbox value="sedan" name="RentalGroup">
-        mini<input type=checkbox value="mini" name="RentalGroup">
+           Filter by Rental Group<br>    
+        SUV<input type=checkbox value="SUV" name="RentalGroup">
+        Sedan<input type=checkbox value="Sedan" name="RentalGroup">
+        Hatchback<input type=checkbox value="Hatchback" name="RentalGroup">
         </div>
         
         

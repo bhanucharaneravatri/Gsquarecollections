@@ -33,8 +33,16 @@
         <form action="Register" method="post" onSubmit="return validate(this)">
             <table border = "0">
                 <tr align="left" valign="top">
+                    <td>first Name:</td>
+                    <td><input type="text" name="firstName" placeholder="Enter first Name"/></td>
+                </tr>
+                <tr align="left" valign="top">
+                    <td>Last Name:</td>
+                    <td><input type="text" name="lastName" placeholder="Enter last Name"/></td>
+                </tr>
+                <tr align="left" valign="top">
                     <td>User Name:</td>
-                    <td><input type="text" name="username" placeholder="Enter User Name"/></td>
+                    <td><input type="text" name="username" placeholder="Enter email id"/></td>
                 </tr>
                 <tr align="left" valign="top">
                     <td>Password:</td>
@@ -42,12 +50,16 @@
                 </tr>
                 <tr align="left" valign="top">
                     <td>ReEnter Password:</td>
-                    <td><input type="text" name="password2" placeholder="Enter Password"/> </td>
+                    <td><input type="text" name="password2" placeholder="Enter Password again"/> </td>
+                </tr>
+                
+                <tr align="left" valign="top">
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dateOfBirth"/> </td>
                 </tr>
                 <tr align="left" valign="top">
                     <td></td>
-                    <td><input type="submit" name="submit" 
-                               value="Register" class="submitButton"/></td>
+                    <td><input type="submit" value="Register" class="btn btn-primary"/></td>
                 </tr>
             </table>
            

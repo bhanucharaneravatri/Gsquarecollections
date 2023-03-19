@@ -13,6 +13,10 @@
          <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <div class="links">
+        <a href="aboutus.jsp">About us</a>
+        <a href="videos.jsp">Videos</a>
+        </div>
         
         <form action="logout">
             <div class="btn-right">

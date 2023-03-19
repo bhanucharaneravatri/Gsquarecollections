@@ -6,7 +6,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : Mar 12, 2023, 9:23:53 AM
     Author     : charanbhanu4
 */
-
+.fcc-btn {
+  background-color: #199319;
+  color: white;
+}
 
 .inputbox {
   background-color:#ffffff ;

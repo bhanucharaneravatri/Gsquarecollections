@@ -85,7 +85,7 @@ public class CarRentalCompany {
                 .filter(car->isAvailable(car,criteria)).collect(Collectors.toList());
      }
 
-    private boolean isAvailable(Car car, Criteria criteria) {
+    public boolean isAvailable(Car car, Criteria criteria) {
         for(Renter r:this.renters)
         {
             if(isCarBookedByRenterOnCriteriaDatePeriod(r,car,criteria))
@@ -93,7 +93,7 @@ public class CarRentalCompany {
         }
          return true;   
     }
-    private boolean isCarBookedByRenterOnCriteriaDatePeriod(Renter r, Car car, Criteria criteria) {
+    public boolean isCarBookedByRenterOnCriteriaDatePeriod(Renter r, Car car, Criteria criteria) {
         if(r.getBookedCar().getRegistrationNumber().equals(car.getRegistrationNumber()))
         {
             if (DatePeriodUtil.areOverlapping(r.getDatePeriod(),criteria.getDatePeriod()))

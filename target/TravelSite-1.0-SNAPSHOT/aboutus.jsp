@@ -14,13 +14,17 @@
     </head>
     <body>
         <div class="links">
-          <a href="videos.jsp">Videos</a>
+        <a href="welcome.jsp">Home</a>
+        <a href="videos.jsp">Videos</a>
         </div>
-        <form action="logout">
-            <div class="btn-right">
-            <input type="submit" value="logout" class="btn btn-primary">
-            </div>
-        </form>
         <h1>We are H&B travel agency</h1>
-    </body>
+        <p>We are a car rental broker, meaning we arrange car rental on your behalf. We provide a place for you to compare deals from many different car rental companies, helping you find the right deal for you, every time.</p>
+
+As a our customer:
+<ul>
+    <li>when you book your car, you enter into a contract with us: we are agreeing to arrange and manage your booking</li>
+    <li>when you pick your car up, you enter into a contract with the rental company: they are agreeing to provide the car.</li>
+</ul>
+    <p>But our job doesn’t end once you’ve booked. We’re here for you if you need to change or cancel your booking, or if you have any questions or concerns – before, during or after your rental.</p>
+</body>
 </html>

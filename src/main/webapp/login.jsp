@@ -27,15 +27,11 @@
                 </tr>
                 <tr align="left" valign="top">
                     <td></td>
-                    <td><input type="submit" name="submit" 
+                    <td><input type="submit"
                                value="login" class="btn btn-primary"/></td>
                 </tr>
             </table>
         </form>
         <a href="Register.jsp">New User?</a>
     </body>
-    
-    
-        
-        
 </html>
